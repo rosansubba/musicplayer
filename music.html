@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Music</title>
+<link rel="stylesheet" type="text/css" href="music.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>
+
+<body>
+
+<header>
+    <div class="menu">
+    	<a href="#" id="click-a"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="logo">
+    	<img src="icon/logo.png">
+    	<a href="#">usic</a>
+    </div>
+    <div class="rightMenu">
+    	<button id="dropbtn"></button>
+       <!-- <div class="drop-box">
+            <div class="dropbox">
+                <ul>
+                <li><a href="#">User</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            </div>
+        </div> -->
+    </div>
+    <div class="nav">
+    	<ul>
+        	<li><a href="#">Main</a></li>
+            <li><a href="#">Songs</a></li>
+            <li><a href="#">Favourite</a></li>
+            <li><a href="#">Add More</a></li>
+        </ul>
+    </div>
+
+</header>
+
+<!--main visible-box and buttom-->
+<div class="overallcontain">
+
+    <!--audio file-- >
+    <audio id="myTrack">
+    	<source src="finding-hope---300-am.mp3" type="audio/mp3"/>
+    </audio>
+    
+    <div class="mainbox">
+    
+    	<div class="roundbox">
+        	<img src="photo.jpg">
+          
+        	<div class="smallbox"></div>
+           
+            <div class="button">
+            	<a class="backward"><i class="fa fa-backward" aria-hidden="true"></i></a>
+                
+            	<button type="button" id="playButton"></button>
+          
+                <a class="forward"><i class="fa fa-forward" aria-hidden="true"></i></a>
+            </div>
+            
+         </div>
+         	<!--mute or volume btn-->
+         	<button type="button" id="muteButton"></button>
+         
+    </div>
+    
+</div>
+
+<!--backward playbarbox-->
+<div class="playbar-box"> 
+	<div class="play-content">
+        <span class="text1">Finding Hope</span><br>
+        <span class="text2">baby its 3 AM</span>
+     
+        <div id="defultBar">
+        	<div id="progressBar"></div>
+        </div>
+        
+    </div>
+    <div class="timer-text">
+    	<span id="currentTime">00:00</span>
+        <span id="fullDuration">00:00</span>
+    </div>
+</div>
+
+<script type="text/javascript" src="music.js"></script>
+
+</body>
+</html>
